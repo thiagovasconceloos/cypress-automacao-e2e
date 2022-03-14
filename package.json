@@ -1,0 +1,14 @@
+{
+  "name": "alura-teste",
+  "version": "1.0.0",
+  "description": "Alura teste e2e",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Thiago Vasconcelos",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.5.1"
+  }
+}
