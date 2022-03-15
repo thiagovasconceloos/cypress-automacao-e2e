@@ -1,7 +1,7 @@
 
 
 
-describe("Busca fotos e dados ",()=>{
+describe("Buscar fotos e dados ",()=>{
 
   it('Busca fotos do flavio',()=>{
 
@@ -15,10 +15,8 @@ describe("Busca fotos e dados ",()=>{
          expect(res.body).is.not.empty
          expect(res.body[0]).to.have.property('description')
          expect(res.body[0].description).to.be.equal('Farol iluminado')
-    }
-
-    )
-
+    })
+}) 
 
     it.only('Fazer login do Flavio',()=>{
 
@@ -36,15 +34,11 @@ describe("Busca fotos e dados ",()=>{
              expect(res.body.id).to.be.equal(1)
              expect(res.body).to.have.property('email')
              expect(res.body.email).to.be.equal("flavio@alurapic.com.br")
-        }
-    
-        )
+        })
 
 
-  })
-
+   })  })  
 
 
 
 
-})
