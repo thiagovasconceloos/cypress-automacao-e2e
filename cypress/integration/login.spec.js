@@ -1,7 +1,9 @@
+
+
 describe('Login de usuarios alura pic', () => {
 
     beforeEach(() => {
-      cy.visit('https://alura-fotos.herokuapp.com')
+      cy.visit('/')
 
       //Simulando resposta de usuário inválido. 
       cy.intercept('POST', 'https://apialurapic.herokuapp.com/user/login', {
@@ -20,4 +22,6 @@ describe('Login de usuarios alura pic', () => {
         cy.on ('window:alert', (str) => {
             expect(str).to.equal('Invalid user name or password') 
         })     
-    })  })
+    })
+
+})

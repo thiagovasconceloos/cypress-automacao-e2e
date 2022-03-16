@@ -5,7 +5,7 @@
 describe('Cadastro de Usuarios', () => {
 
     beforeEach(() => {
-      cy.visit('https://alura-fotos.herokuapp.com')
+      cy.visit('/')
 
      })
 
